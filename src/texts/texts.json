@@ -1,0 +1,37 @@
+{
+  "dictations": [
+    {"title" : "dict1" , "text" :  "This is a test of Moira voice. Does it sounds good? What do you think? It's nice to have this voice. Este es el dictado número 1 del archivo text.json. La dificultad es fácil.",
+      "difficulty": "easy"
+    },
+    {"title" : "dict2" , "text" :  "Este es el dictado número 2 del archivo text.json. La dificultad es difícil.",
+      "difficulty": "hard"
+    },
+    {"title" : "dict3" , "text" :  "Este es el dictado número 2 del archivo text.json. La dificultad es difícil.",
+      "difficulty": "hard"
+    },
+    {"title" : "dict4" , "text" :  "Este es el dictado número 2 del archivo text.json. La dificultad es difícil.",
+      "difficulty": "medium"
+    },
+    {"title" : "dict5" , "text" :  "Este es el dictado número 2 del archivo text.json. La dificultad es difícil.",
+      "difficulty": "hard"
+    },
+    {"title" : "dict6" , "text" :  "Este es el dictado número 2 del archivo text.json. La dificultad es difícil.",
+      "difficulty": "easy"
+    },
+    {"title" : "dict7" , "text" :  "Este es el dictado número 2 del archivo text.json. La dificultad es difícil.",
+      "difficulty": "easy"
+    },
+    {"title" : "dict8" , "text" :  "Este es el dictado número 2 del archivo text.json. La dificultad es difícil.",
+      "difficulty": "medium"
+    },
+    {"title" : "dict9" , "text" :  "Este es el dictado número 2 del archivo text.json. La dificultad es difícil.",
+      "difficulty": "hard"
+    },
+    {"title" : "dict10" , "text" :  "Este es el dictado número 2 del archivo text.json. La dificultad es difícil.",
+      "difficulty": "medium"
+    },
+    {"title" : "dict11" , "text" :  "Este es el dictado número 2 del archivo text.json. La dificultad es difícil.",
+      "difficulty": "hard"
+    }
+  ]
+}
