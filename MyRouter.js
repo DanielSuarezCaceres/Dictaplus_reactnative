@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, BackHandler } from 'react-native';
 import {ActionConst, Actions, Router, Scene, Stack} from 'react-native-router-flux';
 import Home from './src/components/Home';
 import Login from './src/components/Login';
@@ -10,9 +10,10 @@ import Profile from './src/components/Profile';
 import DictationSelector from './src/components/DictationSelector';
 import DictationPage from './src/components/DictationPage';
 import leftSideMenu from './src/components/LeftSideMenu';
+import DictationList from "./src/components/DictationList";
 
 const RouterNavigator = () => (
-    <Router backAndroidHandler={onBackAndroid}>
+    <Router backAndroidHandler={onBackAndroid()}>
         <Scene key="root"
                navBar={Header}
                drawer={true}
@@ -51,13 +52,21 @@ const RouterNavigator = () => (
                    component={DictationPage}
                    hideNavBar={true}
             />
+            <Scene key="dictationList"
+                   component={DictationList}
+                   hideNavBar={true}
+            />
         </Scene>
     </Router>
 );
 
-// habilitar volver atrás con botón Android
+// habilitar volver atrás con botón Android.
 const onBackAndroid = () => {
     return Actions.pop;
+};
+
+const backAndroidSecond = () => {
+    this.goBack();
 };
 
 // para el atributo navbarstyle

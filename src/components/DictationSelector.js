@@ -4,6 +4,7 @@ import {Actions, Router, Scene, Stack} from 'react-native-router-flux';
 import Header from './Header';
 import DictationPage from './DictationPage';
 import GeneralButton from './GeneralButton';
+import { Slider } from 'react-native-elements';
 
 class DictationSelector extends Component {
 
@@ -22,7 +23,7 @@ class DictationSelector extends Component {
                 <View style={{flex:0.1}}><Header headerText={"  Buscar dictados"}/></View>
                 <View style={styles.container}>
                     <Text style={styles.titleStyle}>¿Qué tipo de dictado quieres hacer?</Text>
-                        <Text style={styles.labelStyle}>Level:</Text>
+                        <Text style={styles.labelStyle}>Selecciona el nivel de dificultad:</Text>
                     <Picker
                         selectedValue={this.state.difficulty}
                         style={{ height: 50, width: 100 }}
@@ -31,7 +32,7 @@ class DictationSelector extends Component {
                         <Picker.Item label="Medium" value="medium" />
                         <Picker.Item label="Hard" value="hard" />
                     </Picker>
-                        <Text style={styles.labelStyle}>Language:</Text>
+                        <Text style={styles.labelStyle}>Selecciona el lenguaje del dictado:</Text>
                     <Picker
                         selectedValue={this.state.language}
                         style={{ height: 50, width: 100 }}
@@ -41,11 +42,12 @@ class DictationSelector extends Component {
                         <Picker.Item label="French" value="french" />
                         <Picker.Item label="Italian" value="italian"/>
                     </Picker>
+                    <View style={{alignItems: 'stretch', width:300}}>
                     <GeneralButton
                         buttonText={"Buscar"}
-                        onPressEvent={Actions.dictationPage}
-                        style={{width: 200}}
+                        onPressEvent={Actions.dictationList}
                     />
+                    </View>
                 </View>
             </View>
         );
@@ -66,13 +68,13 @@ const styles = StyleSheet.create({
         marginTop: 40,
         marginBottom: 10,
         fontSize: 20,
-        fontWeight: 'bold',
+        color: 'white',
     },
     labelStyle: {
         marginTop: 20,
         marginBottom: 10,
         fontSize: 15,
-        fontWeight: 'bold',
+        color: 'white',
     },
     pickerStyle: {
         paddingTop: 10,
